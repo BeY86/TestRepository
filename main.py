@@ -1,4 +1,4 @@
-class Percon:
+class Person:
     name = "Ivan"
     age = 10
 
@@ -7,6 +7,14 @@ class Percon:
         self.age = age
 
 
-Igor = Percon()
-Igor.set("Igor", 19)
-print(Igor.name, Igor.age)
+class Student(Person):
+    course = 2
+
+
+igor = Student()
+igor.set("Игорь", 20)
+print(igor.name, igor.age)
+
+vlad = Person()
+vlad.set("Влад", 25)
+print(vlad.name, vlad.age)
