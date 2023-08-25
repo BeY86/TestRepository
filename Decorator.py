@@ -1,15 +1,15 @@
 def Decorator(func):
     def wrapper():
-        print("Код до")
+        print("Start Programm!")
         func()
-        print("Код после")
+        print("Stop Programm!")
 
     return wrapper
 
 
 @Decorator
 def show():
-    print("Код функции!")
+    print("Hello World!")
 
 
 show()
